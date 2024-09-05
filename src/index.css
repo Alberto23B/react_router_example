@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Playwrite+CU&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=SUSE&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 *>* {
- font-family: "Playwrite CU", cursive;
+ font-family: "SUSE", sans-serif;
 }
