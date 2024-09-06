@@ -10,7 +10,7 @@ export default function invoices() {
                 return <Link className="bg-gray-200" 
                 to={`/invoices/${invoice.number}`} 
                 key={invoice.number}
-                target="_blank">
+                >
                   {invoice.name}    
                 </Link>
               })}
