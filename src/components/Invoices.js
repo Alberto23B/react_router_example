@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { Link, Outlet } from "react-router-dom"
 import { getInvoices } from "./data"
 
 export default function invoices() {
@@ -14,6 +14,7 @@ export default function invoices() {
                 </Link>
               })}
             </div>
+            <Outlet></Outlet>
         </main>        
     )
 }

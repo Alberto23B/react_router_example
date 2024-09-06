@@ -6,7 +6,7 @@ import App from './App';
 import { BrowserRouter, Routes, Route  } from "react-router-dom";
 import Invoices from "./components/Invoices";
 import Expenses from "./components/Expenses"
-
+import Bills from "./components/Bills"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,7 +14,9 @@ root.render(
     <BrowserRouter>
       <Routes> 
         <Route path='/' element={ <App />}>
-          <Route path='/invoices' element={ <Invoices />} />
+          <Route path='/invoices' element={ <Invoices />}>
+            <Route path=':invoiceId' element={<Bills />}></Route>
+          </Route>
           <Route path='/expenses' element={ <Expenses />} />
           <Route path="*" element={
             <main className='text-center'>
