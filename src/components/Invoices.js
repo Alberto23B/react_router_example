@@ -9,7 +9,8 @@ export default function invoices() {
               { invoices.map((invoice) => {
                 return <Link className="bg-gray-200" 
                 to={`/invoices/${invoice.number}`} 
-                key={invoice.number}>
+                key={invoice.number}
+                target="_blank">
                   {invoice.name}    
                 </Link>
               })}
