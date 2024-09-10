@@ -4,8 +4,8 @@ import { getInvoices } from "./data"
 export default function invoices() {
     let invoices = getInvoices();
     return (
-        <main className="text-center">
-            <div className="flex flex-col gap-3">
+        <main className="alternate-row">
+            <div className="list">
               { invoices.map((invoice) => {
                 return <NavLink 
                 // style={({ isActive }) => {
@@ -14,7 +14,7 @@ export default function invoices() {
                 //   }
                 // }}
                 className={({isActive}) => 
-                  isActive ? "text-red-400 bg-gray-200" : ""
+                  isActive ? "nav-selected" : ""
                 }
                 // className="bg-gray-200" 
                 to={`/invoices/${invoice.number}`} 

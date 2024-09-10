@@ -8,13 +8,13 @@ let invoices = [
     {
         name: "Korg",
         number: 2,
-        amount: "7.220",
+        amount: "€7.220",
         due: "13/09/2024"
     },
     {
         name: "Erica Synth",
         number: 3,
-        amount: "15.000",
+        amount: "€15.000",
         due: "15/09/2024"
     },
     {

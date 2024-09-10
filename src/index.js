@@ -16,16 +16,16 @@ root.render(
         <Route path='/' element={ <App />}>
           <Route path='/invoices' element={ <Invoices />}>
             <Route index element={
-              <main className='text-center py-5'>
-                <p>Select an Invoice</p>
+              <main className='selected-element'>
+                <h2>Select an Invoice</h2>
               </main>
             }></Route>
             <Route path='/invoices/:invoiceId' element={<Bills />}/>
           </Route>
           <Route path='/expenses' element={ <Expenses />} />
           <Route path="*" element={
-            <main className='text-center'>
-              <p className='text-3xl'>There is nothing here!</p>
+            <main className='selected-element'>
+              <p>There is nothing here!</p>
             </main>
           }></Route>
         </Route>
