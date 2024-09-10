@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route  } from "react-router-dom";
 import Invoices from "./components/Invoices";
 import Expenses from "./components/Expenses"
 import Bills from "./components/Bills"
+import Home from './components/Home';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,6 +15,7 @@ root.render(
     <BrowserRouter>
       <Routes> 
         <Route path='/' element={ <App />}>
+          <Route path='/' element={ <Home />}></Route>
           <Route path='/invoices' element={ <Invoices />}>
             <Route index element={
               <main className='selected-element'>

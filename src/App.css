@@ -14,6 +14,8 @@ a {
 .alternate-row {
   text-align: center;
   display: flex;
+  padding-top: 4rem;
+  line-height: 2rem;
 }
 
 .alternate-row a:nth-child(odd) {
@@ -36,5 +38,37 @@ a {
 }
 
 .invoice {
-  margin: auto;
+  margin: 0 auto;
+}
+
+.container {
+  position: relative;
+  top: 6rem;
+  display: flex;
+  max-width: 100%;
+  justify-content: space-around;
+}
+
+.invoices {
+  padding: 5rem;
+  color: white;
+  border-radius: 20%;
+  background-image: 
+  radial-gradient(circle, rgba(42, 94, 14, 0.73), rgba(245, 246, 252, 0.347) ),
+  url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXu8TcpAFU2l2oJntxdqNdWBpxgAG6ny7xOw&s);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.expenses {
+  padding: 5rem;
+  color: white;
+  border-radius: 20%;
+  background-image: 
+  radial-gradient(circle, rgba(80, 14, 14, 0.73), rgba(245, 246, 252, 0.4)),
+  url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXu8TcpAFU2l2oJntxdqNdWBpxgAG6ny7xOw&s);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
