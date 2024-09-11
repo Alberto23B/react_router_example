@@ -8,6 +8,7 @@ import Invoices from "./components/Invoices";
 import Expenses from "./components/Expenses"
 import Bills from "./components/Bills"
 import Home from './components/Home';
+import Paid from "./components/Paid"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -24,7 +25,14 @@ root.render(
             }></Route>
             <Route path='/invoices/:invoiceId' element={<Bills />}/>
           </Route>
-          <Route path='/expenses' element={ <Expenses />} />
+          <Route path='/expenses' element={ <Expenses />}>
+            <Route index element={
+              <main className='selected-element'>
+                <h2>Select an Invoice</h2>
+              </main>
+            }></Route>
+            <Route path='/expenses/:expenseId' element={<Paid />}/>
+          </Route>  
           <Route path="*" element={
             <main className='selected-element'>
               <p>There is nothing here!</p>
