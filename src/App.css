@@ -4,11 +4,22 @@ a {
 }
 
 .nav-bar {
-  margin: 0 1rem;
+  background-color: #d0d0d0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .nav-link {
-  margin: 0 1rem;
+  font-weight: bold;
+  padding: 0 5vw;
+  border-right: #3b424d 1px solid;
+  text-shadow: 1px 1px 5px #777a7d;
+  height: 100%;
+}
+
+.nav-link:hover {
+  background-color: #777a7d;
 }
 
 .alternate-row {
@@ -50,25 +61,15 @@ a {
 }
 
 .invoices {
-  padding: 5rem;
+  padding: 30vh 15vw;
   color: white;
   border-radius: 20%;
-  background-image: 
-  radial-gradient(circle, rgba(42, 94, 14, 0.73), rgba(245, 246, 252, 0.347) ),
-  url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXu8TcpAFU2l2oJntxdqNdWBpxgAG6ny7xOw&s);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: #3b424d;
 }
 
 .expenses {
-  padding: 5rem;
+  padding: 30vh 15vw;
   color: white;
   border-radius: 20%;
-  background-image: 
-  radial-gradient(circle, rgba(80, 14, 14, 0.73), rgba(245, 246, 252, 0.4)),
-  url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXu8TcpAFU2l2oJntxdqNdWBpxgAG6ny7xOw&s);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: #3b424d;
 }
