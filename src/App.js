@@ -24,26 +24,26 @@ function App() {
           element: <Invoices />,
           children: [
             {
-              path:"/invoices/:invoiceId",
-              element: <Bills />
-            },
-            {
               index: true,
               element: <h1>Select an invoice</h1>
+            },
+            {
+              path:"/invoices/:invoiceId",
+              element: <Bills />
             },
           ]
         },
         {
           path:"/expenses",
           element: <Expenses />,
-          children:[
-            {
-              path: "expenses/:expensesId",
-              element: <Paid />
-            },
+          children: [
             {
               index: true,
               element: <h1>Select an expense</h1>
+            },
+            {
+              path: "/expenses/:expenseId",
+              element: <Paid />
             },
           ]
         },
