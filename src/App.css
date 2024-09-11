@@ -60,15 +60,11 @@ a {
   justify-content: space-around;
 }
 
-.invoices {
-  padding: 30vh 15vw;
-  color: white;
-  border-radius: 20%;
-  background-color: #3b424d;
-}
-
-.expenses {
-  padding: 30vh 15vw;
+.nav-buttons {
+  padding: 30vh 0;
+  margin: 0 auto;
+  text-align: center;
+  width: 30vw;
   color: white;
   border-radius: 20%;
   background-color: #3b424d;

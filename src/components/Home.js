@@ -1,11 +1,19 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 export default function Home() {
     return (
-        <div className="container">
-            <Link to="/invoices" className='link'><h2 className="invoices"> Invoices</h2></Link>
-            <Link to="/expenses" className='link'><h2 className="expenses">Expenses</h2></Link> 
-        </div>
+        <>
+        <div>
+        <nav className='nav-bar'>
+          <Link to="/" className='nav-link'><span>Home</span></Link>
+          <Link to="/invoices" className='nav-link'><span>Invoice</span></Link>
+          <Link to="/expenses" className='nav-link'><span>Expenses</span></Link>
+          <Link to="/balance" className='nav-link'><span>Balance</span></Link>     
+          <Link to="/login" className='nav-link'><span>Login</span></Link> 
+        </nav>
+        <Outlet></Outlet>
+      </div>
+        </>
     )
 }
