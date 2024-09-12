@@ -12,13 +12,13 @@ export default function Login() {
           <button 
           onClick={() => {
             dispatch({type: "login"})
-            navigate("/balance")
+            navigate("/balance", { replace : true})
           }}
           >Login</button> 
           <button 
           onClick={() => {
             dispatch({type: "logout"})
-            navigate("/")
+            navigate("/", { replace : true})
           }}
           >Logout</button>
         </>
