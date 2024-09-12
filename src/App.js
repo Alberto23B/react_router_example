@@ -7,6 +7,7 @@ import Home from './components/Home';
 import Paid from "./components/Paid"
 import MainMenu from './components/MainMenu';
 import Balance from './components/Balance';
+import Login from './components/Login';
 
 
 function App() {
@@ -50,7 +51,7 @@ function App() {
         },
         {
           path:"/login",
-          element: <h1>Login</h1>
+          element: <Login />
         },
         {
           path:"/balance",

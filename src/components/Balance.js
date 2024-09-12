@@ -1,7 +1,10 @@
 import React from "react";
 import { getInvoices, getExpenses } from "./data"
+import AuthConsumer from "../hooks/auth";
 
 export default function Balance() {
+    const [authed, dispatch] = AuthConsumer();
+   
     const invoices = getInvoices();
     const expenses = getExpenses();
 
