@@ -8,12 +8,12 @@ export default function MainMenu() {
 
     return (
         <div className="container">
-          <Link to="/invoices" className='link'><h2 className="nav-buttons"> Invoices</h2></Link>
-          <Link to="/expenses" className='link'><h2 className="nav-buttons">Expenses</h2></Link>
+          <Link to="/invoices" className='link'><p className="nav-buttons"> Invoices</p></Link>
+          <Link to="/expenses" className='link'><p className="nav-buttons">Expenses</p></Link>
           {auth ? (
-            <Link to="/balance" className='link'><h2 className="nav-buttons">Balance</h2></Link> 
+            <Link to="/balance" className='link'><p className="nav-buttons">Balance</p></Link> 
           ) : (
-            <Link to="/login" className='link'><h2 className="nav-buttons">Login to Unlock</h2></Link> 
+            <Link to="/login" className='link'><p className="nav-buttons">Login to Unlock</p></Link> 
           )
         }
         </div>

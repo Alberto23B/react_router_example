@@ -7,20 +7,20 @@ export default function Login() {
     let navigate = useNavigate();
 
     return (
-        <>
+        <div className="title">
           <h1>Login Page</h1>
-          <button 
+          <button className="small-button"
           onClick={() => {
             dispatch({type: "login"})
             navigate("/", { replace : true})
           }}
           >Login</button> 
-          <button 
+          <button className="small-button"
           onClick={() => {
             dispatch({type: "logout"})
             navigate("/", { replace : true})
           }}
           >Logout</button>
-        </>
+        </div>
     )
 }

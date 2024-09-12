@@ -12,9 +12,9 @@ export default function Balance() {
     const balance = totalInvoices - totalExpenses;
 
     return (
-        <div>
-            <p>The current balance is:</p>
-            <p>{Math.sign(balance) === 1 ? `+ ${balance}` : `${balance}` }</p>
+        <div className="title">
+            <p className="balance-banner">The current balance is:</p>
+            <p className="balance">{Math.sign(balance) === 1 ? `+ ${balance}` : `${balance}` }</p>
         </div>
     )
 }

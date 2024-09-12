@@ -4,18 +4,23 @@ a {
 }
 
 .nav-bar {
-  background-color: #d0d0d0;
+  background-color: #182b6b;
+  height: 5vh;
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
 }
 
 .nav-link {
   font-weight: bold;
   padding: 0 5vw;
   border-right: #3b424d 1px solid;
-  text-shadow: 1px 1px 5px #777a7d;
   height: 100%;
+}
+
+.nav-link:first-child {
+  border-left: #3b424d 1px solid;
 }
 
 .nav-link:hover {
@@ -63,9 +68,40 @@ a {
 .nav-buttons {
   padding: 30vh 0;
   margin: 0 auto;
+  font-size: 2rem;
   text-align: center;
   width: 30vw;
   color: white;
   border-radius: 20%;
+  background-color: #3b424d;
+}
+
+.index {
+  margin: 0 auto;
+}
+
+.balance {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.balance-banner {
+  font-weight: bold;
+}
+
+.title {
+  margin: 10vh auto;
+  width: 50vw;
+  text-align: center;
+}
+
+.small-button {
+  padding: 5vh;
+  font-size: 2rem;
+  margin: 0 3vw;
+  text-align: center;
+  width: 15vw;
+  color: white;
+  border-radius: 5%;
   background-color: #3b424d;
 }
