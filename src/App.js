@@ -8,7 +8,7 @@ import Paid from "./components/Paid"
 import MainMenu from './components/MainMenu';
 import Balance from './components/Balance';
 import Login from './components/Login';
-
+import { RequireAuth } from './hooks/auth';
 
 function App() {
 
@@ -55,7 +55,7 @@ function App() {
         },
         {
           path:"/balance",
-          element: <Balance />
+          element: <RequireAuth><Balance /></RequireAuth>
         },
         {
           path:"*",
