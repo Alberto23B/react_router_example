@@ -27,7 +27,7 @@ function App() {
           children: [
             {
               index: true,
-              element: <h1>Select an invoice</h1>
+              element: <h1 className='index'>Select an invoice</h1>
             },
             {
               path:"/invoices/:invoiceId",
@@ -41,7 +41,7 @@ function App() {
           children: [
             {
               index: true,
-              element: <h1>Select an expense</h1>
+              element: <h1 className='index'>Select an expense</h1>
             },
             {
               path: "/expenses/:expenseId",
