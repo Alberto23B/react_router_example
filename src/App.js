@@ -6,6 +6,7 @@ import Bills from "./components/Bills"
 import Home from './components/Home';
 import Paid from "./components/Paid"
 import MainMenu from './components/MainMenu';
+import Balance from './components/Balance';
 
 
 function App() {
@@ -53,7 +54,7 @@ function App() {
         },
         {
           path:"/balance",
-          element: <h1>Balance</h1>
+          element: <Balance />
         },
         {
           path:"*",
