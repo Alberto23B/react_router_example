@@ -6,7 +6,7 @@ export default function Bills() {
     let invoice = getSingleInvoice(parseInt(params.invoiceId));
     return (
         <main className="invoice">
-          <h2>Total Due: {invoice.amount}</h2>
+          <h2>Total Due: {invoice.amount} €</h2>
           <p>{invoice.name} : {invoice.number}</p>
           <p>Due Date: {invoice.due}</p>
         </main>

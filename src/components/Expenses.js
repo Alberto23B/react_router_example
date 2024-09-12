@@ -14,7 +14,7 @@ export default function Expenses() {
                 to={`/expenses/${expense.number}`} 
                 key={expense.number}
                 >
-                  {expense.name}    
+                  {expense.name}     
                 </NavLink>
               })}
             </div>

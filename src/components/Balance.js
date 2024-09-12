@@ -14,7 +14,7 @@ export default function Balance() {
     return (
         <div className="title">
             <p className="balance-banner">The current balance is:</p>
-            <p className="balance">{Math.sign(balance) === 1 ? `+ ${balance}` : `${balance}` }</p>
+            <p className="balance">{Math.sign(balance) === 1 ? `+ ${balance} €` : `${balance} €` }</p>
         </div>
     )
 }
