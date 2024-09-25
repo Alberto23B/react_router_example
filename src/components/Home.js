@@ -10,7 +10,7 @@ export default function Home() {
     return (
     <NavLink style={({isActive}) => {
       return {
-        color: isActive ? "#5dade2" : "#ffffff"
+        color: isActive ? "#8b96cd" : "#ffffff"
       }
     }}
     {...props}></NavLink>

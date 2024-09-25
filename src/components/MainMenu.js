@@ -8,7 +8,7 @@ export default function MainMenu() {
 
     return (
         <div className="container">
-          <Link to="/invoices" className='link'><p className="nav-buttons"> Invoices</p></Link>
+          <Link to="/invoices" className='link'><p className="nav-buttons">Invoices</p></Link>
           <Link to="/expenses" className='link'><p className="nav-buttons">Expenses</p></Link>
           {auth ? (
             <Link to="/balance" className='link'><p className="nav-buttons">Balance</p></Link> 

@@ -3,8 +3,9 @@ a {
   text-decoration: none;
 }
 
+
 .nav-bar {
-  background-color: #182b6b;
+  background-color: rgba(93,93,93,1);
   height: 5vh;
   display: flex;
   flex-direction: row;
@@ -17,6 +18,10 @@ a {
   padding: 0 5vw;
   border-right: #3b424d 1px solid;
   height: 100%;
+}
+
+.nav-link span {
+  vertical-align: sub;
 }
 
 .nav-link:first-child {
@@ -35,7 +40,7 @@ a {
 }
 
 .alternate-row a:nth-child(odd) {
-  background-color: #3b424d;
+  background-color: rgba(93,93,93,1);
   color: #fff;
 }
 
@@ -73,7 +78,18 @@ a {
   width: 30vw;
   color: white;
   border-radius: 20%;
-  background-color: #3b424d;
+  background: rgb(139, 150, 205);
+  background: linear-gradient(90deg,
+   rgba(139,150,205,1) 0%,
+   rgba(137,147,199,1) 5%,
+   rgba(133,142,189,1) 14%, 
+   rgba(128,136,178,1) 24%, 
+   rgba(123,130,166,1) 35%, 
+   rgba(117,123,153,1) 47%, 
+   rgba(112,117,141,1) 58%, 
+   rgba(106,109,125,1) 72%, 
+   rgba(100,102,110,1) 85%, 
+   rgba(93,93,93,1) 100%);
 }
 
 .index {
@@ -103,5 +119,5 @@ a {
   width: 15vw;
   color: white;
   border-radius: 5%;
-  background-color: #3b424d;
+  background-color: rgba(93,93,93,1);
 }
